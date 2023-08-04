@@ -1,5 +1,6 @@
 #include <iostream>
 #include "misaligned.h"
+#include "testMisaligned.h"
 
 int Misaligned::findPairNumber(int majorCol, int minorCol)
 {
@@ -15,4 +16,11 @@ int Misaligned::printColorMap()
         }
     }
     return i * j;
+}
+
+int main() {
+
+    Misaligned::testForMisalignment();
+
+    return 0;
 }

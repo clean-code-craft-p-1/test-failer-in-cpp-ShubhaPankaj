@@ -1,7 +1,7 @@
 #include <iostream>
 #include <assert.h>
 #include "tshirts.h"
-
+#include "testTshirts.h"
 
 char Tshirts::size(int cms)
 {
@@ -16,4 +16,11 @@ char Tshirts::size(int cms)
         sizeName = 'L';
     }
     return sizeName;
+}
+
+int main() {
+
+    Tshirts::testforTshirtSizes();
+
+    return 0;
 }
