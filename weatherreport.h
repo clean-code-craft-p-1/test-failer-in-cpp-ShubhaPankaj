@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <assert.h>
 
 namespace WeatherSpace {
 
@@ -39,4 +40,9 @@ namespace WeatherSpace {
     void TestRainy();
 
     void TestHighPrecipitation();
+}
+
+namespace TestWeatherSpace {
+
+    void testForWeatherReport();
 }

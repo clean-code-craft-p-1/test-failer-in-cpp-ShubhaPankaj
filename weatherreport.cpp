@@ -2,7 +2,6 @@
 #include <iostream>
 #include <assert.h>
 #include "weatherreport.h"
-#include "testWeatherreport.h"
 
 namespace WeatherSpace
 {    
@@ -77,8 +76,17 @@ namespace WeatherSpace
     }   
 }
 
+void TestWeatherSpace::testForWeatherReport()
+{
+    WeatherSpace::TestRainy();
+    WeatherSpace::TestHighPrecipitation();
+    std::cout << "All is well (maybe)\n";
+}
+
 int main() {
 
-    WeatherSpace::testForWeatherReport();
+    TestWeatherSpace::testForWeatherReport();
+
     return 0;
 }
+

@@ -1,7 +1,12 @@
 #pragma once
-#include "testTshirts.h"
+#include <assert.h>
 
 namespace Tshirts {
 
 	char size(int cms);
+}
+
+namespace TestTshirts {
+
+	void testforTshirtSizes();
 }
