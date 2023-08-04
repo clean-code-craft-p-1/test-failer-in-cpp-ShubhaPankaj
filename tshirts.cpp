@@ -1,7 +1,6 @@
 #include <iostream>
 #include <assert.h>
 #include "tshirts.h"
-#include "testTshirts.h"
 
 char Tshirts::size(int cms)
 {
