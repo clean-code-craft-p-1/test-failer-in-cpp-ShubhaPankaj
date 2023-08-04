@@ -4,8 +4,8 @@
 
 int main() {
 
-    //Tshirts::testforTshirtSizes();
-    //Misaligned::testForMisalignment();
+    Tshirts::testforTshirtSizes();
+    Misaligned::testForMisalignment();
     WeatherSpace::testForWeatherReport();
 
     return 0;
