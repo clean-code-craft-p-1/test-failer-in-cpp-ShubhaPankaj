@@ -17,7 +17,7 @@ namespace WeatherSpace {
     /// test the other parts of this application in isolation
     /// without needing the actual Sensor during development
     /// </summary>
-    class SensorStub : public IWeatherSensor {
+    class SensorStubRainy : public IWeatherSensor {
         int Humidity() const override;
 
         int Precipitation() const override;
@@ -27,11 +27,37 @@ namespace WeatherSpace {
         int WindSpeedKMPH() const override;
     };
 
-    class HighPrecipitationStub : public SensorStub {
+    class SensorStubHighPrecipitation : public IWeatherSensor {
+
+        int Humidity() const override;
 
         int Precipitation() const override;
 
         int WindSpeedKMPH() const override;
+
+        double TemperatureInC() const override;
+    };
+
+    class SensorStubHeatWave : public IWeatherSensor {
+
+        int Humidity() const override;
+
+        int Precipitation() const override;
+
+        int WindSpeedKMPH() const override;
+
+        double TemperatureInC() const override;
+    };
+
+    class SensorStubStorm : public IWeatherSensor {
+
+        int Humidity() const override;
+
+        int Precipitation() const override;
+
+        int WindSpeedKMPH() const override;
+
+        double TemperatureInC() const override;
     };
 
 
@@ -40,6 +66,10 @@ namespace WeatherSpace {
     void TestRainy();
 
     void TestHighPrecipitation();
+
+    void TestHeatWave();
+
+    void TestStormWearther();
 }
 
 namespace TestWeatherSpace {
